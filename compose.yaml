@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'summer-project-database'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=athletes'
+      - 'MYSQL_PASSWORD=athletesForStrava'
+      - 'MYSQL_ROOT_PASSWORD=veryAthletesForStrava'
+      - 'MYSQL_USER=myuser'
+    ports:
+      - '3307:3306'
